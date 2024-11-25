@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="explore.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
+    <title>Imaze - Explore</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/logo.png" alt="Imaze Logo">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-google"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="explore-header">
+        <h1>Explore Amazing Images</h1>
+        <p>Discover a wide range of beautiful images categorized for your convenience.</p>
+    </div>
+
+    <div class="explore-content">
+        <div class="category">
+            <img src="image/category (3).jpg" alt="Nature">
+            <div class="overlay">
+                <h3>Nature</h3>
+                <p>Explore stunning nature photography from around the world.</p>
+                <a href="nature.html">View More</a>
+            </div>
+        </div>
+        <div class="category">
+            <img src="image/category (4).jpg" alt="Architecture">
+            <div class="overlay">
+                <h3>Architecture</h3>
+                <p>Discover impressive architecture and building designs.</p>
+                <a href="architecture.html">View More</a>
+            </div>
+        </div>
+        <div class="category">
+            <img src="image/category (2).jpg" alt="People">
+            <div class="overlay">
+                <h3>People</h3>
+                <p>Get inspired by amazing portraits and lifestyle photos.</p>
+                <a href="people.html">View More</a>
+            </div>
+        </div>
+        <div class="category">
+            <img src="image/category (1).jpg" alt="Abstract">
+            <div class="overlay">
+                <h3>Abstract</h3>
+                <p>Immerse yourself in abstract and artistic imagery.</p>
+                <a href="abstract.html">View More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Imaze. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        });
+
+    </script>
+
+</body>
+</html>

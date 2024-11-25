@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+}
+
+/* Login Container */
+.login-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,landscape');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+/* Form Styles */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background: transparent;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-bottom-color: #8e44ad;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #8e44ad;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #8e44ad;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #732d91;
+}
+
+/* Additional Styles */
+.forgot-password,
+.sign-up {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a,
+.sign-up a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.forgot-password a:hover,
+.sign-up a:hover {
+    text-decoration: underline;
+}
